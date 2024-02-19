@@ -1,5 +1,5 @@
 import Header from "@/components/header/header";
-import Cards from "@/components/cards/cards";
+import Cards from "@/components/cardsShort/cards";
 import Footer from "@/components/footer/footer";
 
 const cardsMock: TCard[] = [
@@ -33,31 +33,7 @@ const cardsMock: TCard[] = [
     priceDouble: 250,
     priceStandart: 190,
     description:
-      "Здесь будет описание товара.У некоторых товаров описание может быть коротким, а у некоторых - длинным. Здесь будет описание товара.У некоторых товаров описание может быть коротким, а у некоторых - длинным.",
-  },
-  {
-    image: "/img/dish.png",
-    title: "Товар 5",
-    priceDouble: 250,
-    priceStandart: 190,
-    description:
-      "Здесь будет описание товара.У некоторых товаров описание может быть коротким, а у некоторых - длинным.",
-  },
-  {
-    image: "/img/dish.png",
-    title: "Товар 6",
-    priceDouble: 250,
-    priceStandart: 190,
-    description:
-      "Здесь будет описание товара.У некоторых товаров описание может быть коротким, а у некоторых - длинным. Здесь будет описание товара.У некоторых товаров описание может быть коротким, а у некоторых - длинным.",
-  },
-  {
-    image: "/img/dish.png",
-    title: "Товар 7",
-    priceDouble: 250,
-    priceStandart: 190,
-    description:
-      "Здесь будет описание товара.У некоторых товаров описание может быть коротким, а у некоторых - длинным.",
+      "Здесь будет описание товара.У некоторых товаров описание может быть коротким, а у некоторых - длинным. У будет описание товара.У некоторых товаров описание может быть коротким, а у некоторых - длинным.",
   },
 ];
 
@@ -80,7 +56,7 @@ export default async function Home() {
       <header>
         <Header />
       </header>
-      <main>
+      <main >
         <Cards cards={data.cards} />
       </main>
       <footer>

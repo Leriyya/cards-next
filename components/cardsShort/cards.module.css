@@ -1,0 +1,38 @@
+.cards {
+  max-width: 1360px;
+  padding: 70px 30px 94px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.breadcrumbs {
+  font-size: 14px;
+  display: flex;
+  gap: 3px;
+  color: #575757;
+}
+
+.title {
+  margin-top: 20px;
+  color: #064087;
+  font-size: 54px;
+  font-weight: 800;
+  margin-bottom: 30px;
+
+  @media screen and (max-width: 700px) {
+    font-size: 34px;
+  }
+  @media screen and (max-width: 430px) {
+    font-size: 26px;
+  }
+}
+
+.cardsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+
+  @media screen and (max-width: 550px) {
+    justify-content: center;
+  }
+}

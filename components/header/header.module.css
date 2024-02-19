@@ -1,0 +1,72 @@
+.container {
+  max-width: 1360px;
+  padding: 32px 30px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 110px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header {
+  box-shadow: -1px -13px 20px 0px;
+}
+
+.info {
+  display: flex;
+  gap: 26px;
+  align-items: center;
+
+  @media screen and (max-width: 550px) {
+    gap: 10px;
+  }
+}
+
+.cartContainer {
+  background-color: #064087;
+  border-radius: 0px 0px 7px 7px;
+  margin-top: -32px;
+  height: 100px;
+  padding-top: 52px;
+}
+
+.cart {
+  padding: 0 20px;
+}
+
+.logo {
+  background-color: #064087;
+  color: white;
+  border-radius: 6px;
+  border: none;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  padding: 18px 70px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 550px) {
+    font-size: 12px;
+    padding: 14px 30px;
+  }
+}
+
+.contact {
+  color: #064087;
+  font-size: 14px;
+  font-weight: 700;
+
+  @media screen and (max-width: 550px) {
+    font-size: 12px;
+  }
+}
+
+.contactNumber {
+  font-size: 22px;
+
+  @media screen and (max-width: 550px) {
+    font-size: 16px;
+  }
+}
