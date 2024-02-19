@@ -25,6 +25,7 @@
 }
 
 .cart {
+  pointer-events: none; 
   @media screen and (625px <= width <= 700px) {
     width: 223px;
     height: 145px;
@@ -84,11 +85,16 @@
   font-size: 18px;
   font-weight: 800;
   padding: 17px 40px;
+  cursor: pointer;
 
   @media screen and (625px <= width <= 700px) {
     font-size: 16px;
     padding: 14px 20px;
   }
+}
+
+.cardButton:hover {
+  background-color: #ff6201;
 }
 
 .switch {
