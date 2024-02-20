@@ -4,7 +4,7 @@ import Image from "next/image";
 import styles from "./card.module.css";
 
 interface CardProps extends React.PropsWithChildren {
-  image: any;
+  image: string;
   className?: string;
   title?: string;
   description?: string;

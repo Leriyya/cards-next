@@ -1,0 +1,23 @@
+.checkbox {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.checkboxTitle {
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.checkboxValue {
+  display: flex;
+  gap: 5px;
+}
+
+.counter {
+  color: #878787;
+}
+
+.checkboxInput {
+  cursor: pointer;
+}

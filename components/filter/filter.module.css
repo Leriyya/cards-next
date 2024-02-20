@@ -1,0 +1,30 @@
+.filterContainer {
+  width: 30%;
+  padding: 70px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.filterTitle {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.filterButtons {
+  border: none;
+  border-radius: 5px;
+  background-color: #064087;
+  padding: 10px 10px;
+  color: white;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.filterBut {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 10px;
+  
+}

@@ -1,0 +1,47 @@
+.card {
+  box-shadow: 0px 15px 20px 0px #0000000d;
+  width: 305px;
+  position: relative;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (625px <= width <= 700px) {
+    width: 270px;
+  }
+}
+
+.cardContent {
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+
+  @media screen and (625px <= width <= 700px) {
+    padding: 14px 15px 0;
+  }
+}
+
+.cardTitle {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+
+  @media screen and (625px <= width <= 700px) {
+    font-size: 20px;
+  }
+}
+
+.cardOrder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardButton {
+  border: none;
+  border-radius: 10px;
+  background-color: #064087;
+  padding: 10px 20px;
+  color: white;
+}
