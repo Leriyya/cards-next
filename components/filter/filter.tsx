@@ -4,6 +4,8 @@ import styles from "./filter.module.css";
 import { useEffect, useState } from "react";
 import { CheckboxGroup, TCheckbox } from "../checkboxGroup/checkbox";
 import { Slider } from "@mui/material";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 interface Props {
   cards: TWineCard[];
@@ -151,6 +153,21 @@ const filtersCounterParams = {
   },
 };
 
+const categoryParams = [
+  {
+    descriptions: "best-wine",
+    title: "лучшие вина",
+  },
+  {
+    descriptions: "excellent-wine",
+    title: "отличные вина",
+  },
+  {
+    descriptions: "great-wine",
+    title: "замечательные",
+  },
+];
+
 export function Filter({ cards, setFilteredCards }: Props) {
   const [filters, setFilters] = useState(filtersParams);
   const [counter, setCounter] = useState(filtersCounterParams);
@@ -221,11 +238,25 @@ export function Filter({ cards, setFilteredCards }: Props) {
   const onIncrease = () => {
     setFilteredCards((prev: TWineCard[]) => [...prev.sort((a, b) => a.price - b.price)]);
   }
+
+  const pathName = usePathname()
   
   return (
     <div className={styles.filterContainer}>
       <div className={styles.filterTitle}>Фильтры</div>
-      
+       <div className={styles.categoryContainer}>
+        {categoryParams.map((index) => (
+          <Link
+            href={{
+              pathname: `/filter/${index.descriptions}`,
+            }}
+            className={pathName == `/filter/${index.descriptions}` ? styles.categoryActive : styles.category }
+            key={index.descriptions}
+          >
+            {index.title}
+          </Link>
+        ))}
+      </div>
       <div>
         <div>Цена</div>
         <Slider

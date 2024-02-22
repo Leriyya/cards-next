@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useState } from "react";
 import { Filter } from "../filter/filter";
 import { WineCard } from "../wineCard/wineCard";
@@ -14,7 +14,11 @@ export default function WineCards({ cards }: Props) {
 
   return (
     <>
-      <Filter cards={cards} filteredCards={filteredCards} setFilteredCards={setFilteredCards} />
+      <Filter
+        cards={cards}
+        filteredCards={filteredCards}
+        setFilteredCards={setFilteredCards}
+      />
       <div className={styles.cards}>
         <div className={styles.breadcrumbs}>
           <a href="/">Главная</a>/<a href="/menu">Меню</a>/

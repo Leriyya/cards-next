@@ -26,5 +26,16 @@
   flex-direction: column;
   margin-top: 20px;
   gap: 10px;
-  
+}
+
+.category:hover {
+  color: #094fa3;
+}
+.categoryContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.categoryActive{
+  color: #094fa3;
 }

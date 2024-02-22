@@ -28,7 +28,7 @@ export default function Header() {
           </div>
           <div className={styles.cartContainer}>
             <Image
-              src={"./svg/cart.svg"}
+              src={"../svg/cart.svg"}
               alt="cart"
               width={70}
               height={24}

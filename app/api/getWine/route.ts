@@ -32,7 +32,7 @@ async function fetchProducts({ search, category }: any) {
   const countries = ["Италия", "Франция", "США"];
   const regions = ["Пьемонт", "Бароло", "Бордо", "Напа", "СантаБарбара"];
   const volumes = ["0.5", "0.7", "1", "0.62", "0.75", "3", "1.5"];
-  const descriptions = ["best wine", "excellent wine", "great wine"];
+  const descriptions = ["best-wine", "excellent-wine", "great-wine"];
 
   function generateWine() {
     return {
